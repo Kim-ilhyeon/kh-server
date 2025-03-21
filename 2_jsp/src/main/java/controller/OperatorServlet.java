@@ -50,6 +50,9 @@ public class OperatorServlet extends HttpServlet {
 		list2.add("옥지");
 		request.setAttribute("list2", list2);
 		
+		// 2_elOperator.jsp 페이지로 응답하기(포워딩)
+		request.getRequestDispatcher("views/2_EL/2_elOperator.jsp").forward(request, response);
+		
 	}
 
 	/**
