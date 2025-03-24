@@ -39,14 +39,51 @@
 	
 	<br><br>
 	
-	<h3>* formatDate</h3>
+	<h1>* formatDate</h1>
 	
 	<p>날짜 및 시간 데이터의 포맷(형식) 지정하여 출력</p>
 	
 	<i>단, java.util.Date 객체를 사용하는 액션 태그이다.</i>
+	<br>
+	
+	<c:set var="now" value="<%= new java.util.Date() %>" />
+	- now : ${ now }
+	<br>
+	
+	<ul>
+		<li>
+			날짜 : <fmt:formatDate value="${ now }" type="date"/>
+		</li>
+		<li>
+			시간 : <fmt:formatDate value="${ now }" type="time"/>
+		</li>
+		<li>
+			날짜 + 시간 : <fmt:formatDate value="${ now }" type="both"/>
+			<ul>
+				<li>
+					medium : <fmt:formatDate value="${ now }" type="both" dateStyle="medium" timeStyle="medium"/>
+				</li>
+				<li>
+					long : <fmt:formatDate value="${ now }" type="both" dateStyle="long" timeStyle="long"/>
+				</li>
+				<li>
+					short : <fmt:formatDate value="${ now }" type="both" dateStyle="short" timeStyle="short"/>
+				</li>
+				<li>
+					full : <fmt:formatDate value="${ now }" type="both" dateStyle="full" timeStyle="full"/>
+				</li>
+				<li>
+					pattern : <fmt:formatDate value="${ now }" type="both" pattern="yyyy-MM-dd(E) HH:mm:ss"/>
+				</li>
+			</ul>
+		</li>
+	</ul>
 
 	
-
+	
+	
+	
+	
 	
 	
 	

@@ -4,7 +4,7 @@
   
   
   <!-- XML 방식으로URL 매핑 -->
-  
+  <!--
   <servlet>
   		<servlet-name>orderResult</servlet-name>
   		<servlet-class>controller.PizzaOrder</servlet-class>
@@ -12,8 +12,9 @@
   
   <servlet-mapping>
   		<servlet-name>orderResult</servlet-name>
-  		<url-pattern>orderResult</url-pattern>
+  		<url-pattern>/orderResult</url-pattern>
   </servlet-mapping>
+  -->
   
   
   <welcome-file-list>

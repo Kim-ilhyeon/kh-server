@@ -27,6 +27,11 @@
 	
 	<a href="3_fmt.jsp">Format Library</a>
 	
+	<h4>* JSTL Function Library</h4>
+	<p>EL 내에서 사용할 수 있는 메소드를 제공</p>
+	
+	<a href="4_function.jsp">function Library</a>
+	
 	
 	
 	
